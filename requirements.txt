@@ -1,0 +1,16 @@
+torch>=2.0
+numpy
+scipy
+librosa>=0.10
+pyworld
+soundfile
+numba
+g2p_en
+inflect
+nltk
+pyyaml
+matplotlib
+tqdm
+huggingface_hub
+pyarrow
+markdown

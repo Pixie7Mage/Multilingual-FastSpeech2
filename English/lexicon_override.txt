@@ -1,0 +1,4 @@
+# Optional word -> ARPAbet overrides applied before g2p_en (one word per line).
+# Used for code-mixed / non-English words that g2p_en mispronounces.
+# "andaroo" (Telugu "andaru" = everyone) — g2p_en alone gives AE0 N D AA1 R OW0.
+andaroo AA1 N D AH0 R UW0

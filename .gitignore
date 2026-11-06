@@ -1,0 +1,31 @@
+data/*
+!English/data/
+English/data/*
+!English/data/train.tsv
+!English/data/val.tsv
+!English/data/selection_stats.json
+data_old/
+__pycache__/
+*.pyc
+*/checkpoints/latest.pth
+*/checkpoints/best.pth
+*/checkpoints/step_*.pth
+fs2/hifigan/generator_universal.pth.tar
+# Model checkpoints
+*/checkpoints/*.pth
+
+# Generated inference audio
+Results/*/test_generated_audios/
+!Results/English_best/test_generated_audios/
+!Results/English_final/test_generated_audios/
+!Results/English_best/test_generated_audios/*.wav
+!Results/English_final/test_generated_audios/*.wav
+
+# Python cache
+.ipynb_checkpoints/
+
+# Large pretrained model archive
+fs2/hifigan/generator_universal.pth.tar.zip
+
+# Temporary debug visualisations
+Results/English/logs/debug/
