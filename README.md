@@ -6,8 +6,6 @@ The main modification to the reference implementation is the removal of **Montre
 
 Telugu-specific modifications include rule-based Grapheme-to-Phoneme (G2P) conversion, Telugu text normalization and number expansion.
 
-See `Report/` for the complete implementation details, modifications, experiments and analysis.
-
 ---
 
 ## Project Structure
@@ -528,7 +526,6 @@ FastSpeech2_Checkpoints/
 │       └── final_fp16.pth
 │
 ├── Telugu/
-│   ├── best_fp16.pth
 │   └── final_fp16.pth
 │
 └── HiFi-GAN/
@@ -543,7 +540,6 @@ FastSpeech2_Checkpoints/
 | English v2 `final_fp16.pth` | Final English v2 checkpoint | `English/checkpoints_v2/final_fp16.pth` |
 | English v3 `best_fp16.pth` | Best English v3 checkpoint | `English/checkpoints_v3/best_fp16.pth` |
 | English v3 `final_fp16.pth` | Primary final English checkpoint (75k steps) | `English/checkpoints_v3/final_fp16.pth` |
-| Telugu `best_fp16.pth` | Best Telugu checkpoint | `Telugu/checkpoints/best_fp16.pth` |
 | Telugu `final_fp16.pth` | Primary final Telugu checkpoint (50k steps) | `Telugu/checkpoints/final_fp16.pth` |
 | HiFi-GAN vocoder | Pretrained universal vocoder | `fs2/hifigan/generator_universal.pth.tar` |
 
