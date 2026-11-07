@@ -1,0 +1,101 @@
+language: en
+language_name: English
+dataset:
+  name: svarah
+  train_hours: 5.0
+  val_hours: 1.0
+  max_duration_s: 15.0
+text:
+  lexicon_override: lexicon_override.txt
+path:
+  raw_path: ../data/English/raw
+  preprocessed_path: ../data/English/preprocessed
+  ckpt_path: checkpoints_v3
+  log_path: ../Results/English_v3/logs
+  result_path: ../Results/English_v3
+preprocessing:
+  audio:
+    sampling_rate: 22050
+    max_wav_value: 32768.0
+    trim_top_db: 40
+  stft:
+    filter_length: 1024
+    hop_length: 256
+    win_length: 1024
+  mel:
+    n_mel_channels: 80
+    mel_fmin: 0
+    mel_fmax: 8000
+  pitch:
+    feature: phoneme_level
+    normalization: true
+    f0_min: 60
+    f0_max: 500
+  energy:
+    feature: phoneme_level
+    normalization: true
+model:
+  transformer:
+    encoder_layer: 4
+    encoder_head: 2
+    encoder_hidden: 256
+    decoder_layer: 6
+    decoder_head: 2
+    decoder_hidden: 256
+    conv_filter_size: 1024
+    conv_kernel_size:
+    - 9
+    - 1
+    encoder_dropout: 0.2
+    decoder_dropout: 0.2
+  variance_predictor:
+    filter_size: 256
+    kernel_size: 3
+    dropout: 0.5
+  variance_embedding:
+    pitch_quantization: linear
+    energy_quantization: linear
+    n_bins: 256
+  aligner:
+    attn_channels: 80
+    temperature: 0.0005
+    own_embedding: true
+  max_seq_len: 1400
+  vocoder:
+    model: HiFi-GAN
+    speaker: universal
+inference:
+  speaker: svarah_cfdf65f7
+  duration_control: 1.0
+train:
+  seed: 1234
+  fp16_run: false
+  optimizer:
+    batch_size: 16
+    betas:
+    - 0.9
+    - 0.98
+    eps: 1.0e-09
+    weight_decay: 0.0
+    grad_clip_thresh: 1.0
+    grad_acc_step: 1
+    warm_up_step: 4000
+    anneal_steps:
+    - 60000
+    - 65000
+    - 70000
+    anneal_rate: 0.3
+  aligner:
+    ctc_weight: 1.0
+    bin_weight: 1.0
+    bin_start_step: 4000
+    bin_warmup_steps: 4000
+    prior_scaling: 1.0
+  step:
+    total_step: 75000
+    log_step: 100
+    val_step: 1000
+    synth_step: 5000
+    save_step: 5000
+  keep_last_ckpts: 10
+  best_ckpt_min_step: 10000

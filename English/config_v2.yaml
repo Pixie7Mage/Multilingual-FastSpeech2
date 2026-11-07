@@ -1,0 +1,99 @@
+
+# FastSpeech 2 — English v2: smaller, more regularised decoder (see asr_baseline.py results)
+language: en
+language_name: English
+
+dataset:
+  name: svarah                  # ai4bharat/Svarah on the Hugging Face Hub (gated: accept terms + HF token)
+  train_hours: 5.0
+  val_hours: 1.0
+  max_duration_s: 15.0
+
+text:
+  lexicon_override: lexicon_override.txt   # optional per-word pronunciations (code-mixed words)
+
+path:                           # relative to this folder
+  raw_path: ../data/English/raw
+  preprocessed_path: ../data/English/preprocessed
+  ckpt_path: checkpoints_v2
+  log_path: ../Results/English_v2/logs
+  result_path: ../Results/English_v2
+
+preprocessing:
+  audio:
+    sampling_rate: 22050
+    max_wav_value: 32768.0
+    trim_top_db: 40
+  stft:
+    filter_length: 1024
+    hop_length: 256
+    win_length: 1024
+  mel:
+    n_mel_channels: 80
+    mel_fmin: 0
+    mel_fmax: 8000              # 8 kHz, required by the HiFi-GAN universal vocoder
+  pitch:
+    feature: phoneme_level
+    normalization: true
+    f0_min: 60
+    f0_max: 500
+  energy:
+    feature: phoneme_level
+    normalization: true
+
+model:                          # v2: decoder 6->4 layers, dropout 0.2->0.3
+  transformer:
+    encoder_layer: 4
+    encoder_head: 2
+    encoder_hidden: 256
+    decoder_layer: 4
+    decoder_head: 2
+    decoder_hidden: 256
+    conv_filter_size: 1024
+    conv_kernel_size: [9, 1]
+    encoder_dropout: 0.3
+    decoder_dropout: 0.3
+  variance_predictor:
+    filter_size: 256
+    kernel_size: 3
+    dropout: 0.5
+  variance_embedding:
+    pitch_quantization: linear
+    energy_quantization: linear
+    n_bins: 256
+  aligner:
+    attn_channels: 80
+    temperature: 0.0005
+    own_embedding: true         # aligner gets its own text embedding (see fs2/model/fastspeech2.py)
+  max_seq_len: 1400             # frames (~16 s); longer utterances are dropped in preprocessing
+  vocoder:
+    model: HiFi-GAN
+    speaker: universal
+
+train:
+  seed: 1234
+  fp16_run: false
+  optimizer:
+    batch_size: 16
+    betas: [0.9, 0.98]
+    eps: 1.0e-9
+    weight_decay: 0.0
+    grad_clip_thresh: 1.0
+    grad_acc_step: 1
+    warm_up_step: 4000
+    anneal_steps: [12000, 16000, 18000]
+    anneal_rate: 0.3
+  aligner:
+    ctc_weight: 1.0
+    bin_weight: 1.0
+    bin_start_step: 4000
+    bin_warmup_steps: 4000
+    prior_scaling: 1.0
+  step:
+    total_step: 20000
+    log_step: 100
+    val_step: 1000
+    synth_step: 1000
+    save_step: 1000
+  keep_last_ckpts: 2
+  best_ckpt_min_step: 10000

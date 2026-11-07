@@ -1,0 +1,30 @@
+data/
+data_old/
+**/preprocessed/
+**/raw/
+**/wavs/
+__pycache__/
+**/__pycache__/
+*.pyc
+**/checkpoints/
+**/checkpoints_v*/
+*.pth
+*.pt
+*.ckpt
+fs2/hifigan/generator_universal.pth.tar
+*.log
+.DS_Store
+.ipynb_checkpoints/
+
+# Temporary archives and database
+*.zip
+state.db
+
+# All model checkpoints
+English/checkpoints/
+English/checkpoints_v*/
+Telugu/checkpoints/
+Telugu/checkpoints_v*/
+**/*.pth
+**/*.pt
+**/*.ckpt
