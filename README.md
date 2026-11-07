@@ -38,7 +38,9 @@ Multilingual-FastSpeech2/
 │   ├── train.py
 │   ├── inference.py
 │   ├── config.yaml
-│   └── checkpoints_v2/               Checkpoints hosted on Google Drive
+│   ├── checkpoints/
+│   ├── checkpoints_v2/
+│   └── checkpoints_v3/               Checkpoints hosted on Google Drive
 │
 ├── Telugu/
 │   ├── prepare_data.py
@@ -61,9 +63,7 @@ Multilingual-FastSpeech2/
 │   └── Telugu_unseen/                Telugu unseen-sentence evaluation
 │
 ├── Report/
-│   ├── Technical_Report.pdf
 │   ├── Technical_Report.md
-│   ├── Technical_Report.html
 │   └── build_report.py
 │
 ├── colab_run.ipynb                   Google Colab notebook
@@ -283,7 +283,6 @@ The two language models were trained separately.
 
 The English WER values and Telugu CER values are based on their respective evaluation procedures and should not be directly compared.
 
-Refer to `Report/Technical_Report.pdf` for detailed evaluation methodology, experimental observations, limitations and results.
 
 ---
 
@@ -564,7 +563,6 @@ The other English versions and best checkpoints are retained for experimental co
 4. Place the files at their corresponding project locations.
 5. Run the language-specific inference script.
 
-Ensure the Google Drive folder and files are accessible through **Anyone with the link — Viewer** permissions during evaluation.
 
 ---
 
@@ -588,24 +586,7 @@ The report includes:
 
 ---
 
-## 11. Generating the Technical Report
-
-The report can be regenerated using:
-
-```bash
-python Report/build_report.py \
-    --author "Your Name" \
-    --repo "https://github.com/Pixie7Mage/Multilingual-FastSpeech2" \
-    --gpu "Tesla T4"
-```
-
-This generates the Markdown and HTML report with the corresponding experimental information and figures.
-
-Replace any remaining placeholders with the appropriate experimental observations before generating the final PDF.
-
----
-
-## 12. Custom Text Inference
+## 11. Custom Text Inference
 
 To synthesize speech for a custom sentence, use the language-specific inference script.
 
@@ -623,7 +604,7 @@ The inference script uses the corresponding language configuration, trained chec
 
 ---
 
-## 13. GitHub Submission and Reproducibility
+## 12. GitHub Submission and Reproducibility
 
 The GitHub repository contains the complete implementation, language-specific scripts, configurations, results and technical report.
 
