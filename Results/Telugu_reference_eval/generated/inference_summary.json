@@ -1,0 +1,909 @@
+{
+  "checkpoint": "final_fp16.pth",
+  "step": 50000,
+  "speaker": "te_male",
+  "controls": {
+    "pitch": 1.0,
+    "energy": 1.0,
+    "duration": 1.0
+  },
+  "sentences": {
+    "te_004349": {
+      "text": "కోట్ల భారం పడుతున్నందున, పశుసంవర్దక శాఖ బడ్జేట్ ను స్వల్పంగా మాత్రమే పెంచే అవకాశముందన్న అభిప్రాయాన్ని, వ్యక్తం చేశారు.",
+      "phonemes": "k oo tt l a _ bh aa r a m _ p a dd u t u n n a n d u n a , _ p a sh u s a m v a r d a k a _ sh aa kh a _ b a dd j ee tt _ n u _ s v a l p a ng g aa _ m aa t r a m ee _ p e ny c ee _ a v a k aa sh a m u n d a n n a _ a bh i p r aa y aa n n i , _ v y a k t a m _ c ee sh aa r u .",
+      "n_phonemes": 126,
+      "duration_s": 7.616,
+      "per_phoneme": [
+        {
+          "phone": "k",
+          "frames": 9,
+          "ms": 104.5,
+          "pitch_hz": 194.7,
+          "energy": 5.309
+        },
+        {
+          "phone": "oo",
+          "frames": 11,
+          "ms": 127.7,
+          "pitch_hz": 209.2,
+          "energy": 115.259
+        },
+        {
+          "phone": "tt",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 257.7,
+          "energy": 17.361
+        },
+        {
+          "phone": "l",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 279.8,
+          "energy": 63.561
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 261.2,
+          "energy": 145.421
+        },
+        {
+          "phone": "_",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 177.7,
+          "energy": 64.666
+        },
+        {
+          "phone": "bh",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 161.1,
+          "energy": 53.459
+        },
+        {
+          "phone": "aa",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 194.8,
+          "energy": 143.61
+        },
+        {
+          "phone": "r",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 221.5,
+          "energy": 111.038
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 249.1,
+          "energy": 106.432
+        },
+        {
+          "phone": "m",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 243.6,
+          "energy": 73.607
+        },
+        {
+          "phone": "_",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 222.1,
+          "energy": 21.62
+        },
+        {
+          "phone": "p",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 221.1,
+          "energy": 21.92
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 215.0,
+          "energy": 107.991
+        },
+        {
+          "phone": "dd",
+          "frames": 2,
+          "ms": 23.2,
+          "pitch_hz": 198.3,
+          "energy": 38.015
+        },
+        {
+          "phone": "u",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 203.8,
+          "energy": 47.082
+        },
+        {
+          "phone": "t",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 189.7,
+          "energy": 5.122
+        },
+        {
+          "phone": "u",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 207.7,
+          "energy": 42.291
+        },
+        {
+          "phone": "n",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 198.7,
+          "energy": 50.829
+        },
+        {
+          "phone": "n",
+          "frames": 2,
+          "ms": 23.2,
+          "pitch_hz": 191.8,
+          "energy": 58.607
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 186.9,
+          "energy": 70.578
+        },
+        {
+          "phone": "n",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 187.2,
+          "energy": 54.831
+        },
+        {
+          "phone": "d",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 184.7,
+          "energy": 43.747
+        },
+        {
+          "phone": "u",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 193.1,
+          "energy": 54.958
+        },
+        {
+          "phone": "n",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 199.2,
+          "energy": 50.628
+        },
+        {
+          "phone": "a",
+          "frames": 11,
+          "ms": 127.7,
+          "pitch_hz": 182.4,
+          "energy": 77.557
+        },
+        {
+          "phone": ",",
+          "frames": 9,
+          "ms": 104.5,
+          "pitch_hz": 97.3,
+          "energy": 12.332
+        },
+        {
+          "phone": "_",
+          "frames": 22,
+          "ms": 255.4,
+          "pitch_hz": 118.1,
+          "energy": 0.695
+        },
+        {
+          "phone": "p",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 172.3,
+          "energy": 20.717
+        },
+        {
+          "phone": "a",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 191.6,
+          "energy": 83.373
+        },
+        {
+          "phone": "sh",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 216.8,
+          "energy": 15.347
+        },
+        {
+          "phone": "u",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 261.4,
+          "energy": 61.03
+        },
+        {
+          "phone": "s",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 253.8,
+          "energy": 21.479
+        },
+        {
+          "phone": "a",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 254.3,
+          "energy": 55.374
+        },
+        {
+          "phone": "m",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 235.6,
+          "energy": 70.509
+        },
+        {
+          "phone": "v",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 215.9,
+          "energy": 61.806
+        },
+        {
+          "phone": "a",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 212.1,
+          "energy": 106.189
+        },
+        {
+          "phone": "r",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 196.1,
+          "energy": 39.787
+        },
+        {
+          "phone": "d",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 190.4,
+          "energy": 21.336
+        },
+        {
+          "phone": "a",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 221.2,
+          "energy": 48.057
+        },
+        {
+          "phone": "k",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 205.6,
+          "energy": 4.169
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 215.7,
+          "energy": 65.631
+        },
+        {
+          "phone": "_",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 206.6,
+          "energy": 33.731
+        },
+        {
+          "phone": "sh",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 215.1,
+          "energy": 12.197
+        },
+        {
+          "phone": "aa",
+          "frames": 9,
+          "ms": 104.5,
+          "pitch_hz": 215.4,
+          "energy": 85.677
+        },
+        {
+          "phone": "kh",
+          "frames": 9,
+          "ms": 104.5,
+          "pitch_hz": 209.8,
+          "energy": 34.053
+        },
+        {
+          "phone": "a",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 224.5,
+          "energy": 88.97
+        },
+        {
+          "phone": "_",
+          "frames": 7,
+          "ms": 81.3,
+          "pitch_hz": 173.0,
+          "energy": 52.648
+        },
+        {
+          "phone": "b",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 138.8,
+          "energy": 30.466
+        },
+        {
+          "phone": "a",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 163.0,
+          "energy": 107.712
+        },
+        {
+          "phone": "dd",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 173.6,
+          "energy": 35.143
+        },
+        {
+          "phone": "j",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 170.6,
+          "energy": 29.859
+        },
+        {
+          "phone": "ee",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 225.4,
+          "energy": 87.385
+        },
+        {
+          "phone": "tt",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 213.6,
+          "energy": 18.675
+        },
+        {
+          "phone": "_",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 212.6,
+          "energy": 8.204
+        },
+        {
+          "phone": "n",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 194.7,
+          "energy": 50.511
+        },
+        {
+          "phone": "u",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 186.5,
+          "energy": 57.287
+        },
+        {
+          "phone": "_",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 166.5,
+          "energy": 28.477
+        },
+        {
+          "phone": "s",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 165.0,
+          "energy": 8.833
+        },
+        {
+          "phone": "v",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 166.8,
+          "energy": 17.116
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 181.5,
+          "energy": 81.675
+        },
+        {
+          "phone": "l",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 199.7,
+          "energy": 42.972
+        },
+        {
+          "phone": "p",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 218.9,
+          "energy": 10.557
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 229.2,
+          "energy": 92.808
+        },
+        {
+          "phone": "ng",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 224.1,
+          "energy": 70.334
+        },
+        {
+          "phone": "g",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 213.6,
+          "energy": 45.392
+        },
+        {
+          "phone": "aa",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 228.3,
+          "energy": 121.828
+        },
+        {
+          "phone": "_",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 211.9,
+          "energy": 74.608
+        },
+        {
+          "phone": "m",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 188.2,
+          "energy": 50.719
+        },
+        {
+          "phone": "aa",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 175.4,
+          "energy": 66.338
+        },
+        {
+          "phone": "t",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 192.4,
+          "energy": 11.837
+        },
+        {
+          "phone": "r",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 207.7,
+          "energy": 41.932
+        },
+        {
+          "phone": "a",
+          "frames": 2,
+          "ms": 23.2,
+          "pitch_hz": 212.6,
+          "energy": 66.042
+        },
+        {
+          "phone": "m",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 204.4,
+          "energy": 54.443
+        },
+        {
+          "phone": "ee",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 216.7,
+          "energy": 57.2
+        },
+        {
+          "phone": "_",
+          "frames": 7,
+          "ms": 81.3,
+          "pitch_hz": 228.7,
+          "energy": 12.885
+        },
+        {
+          "phone": "p",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 201.6,
+          "energy": 17.461
+        },
+        {
+          "phone": "e",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 186.9,
+          "energy": 66.773
+        },
+        {
+          "phone": "ny",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 177.5,
+          "energy": 35.995
+        },
+        {
+          "phone": "c",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 179.1,
+          "energy": 11.501
+        },
+        {
+          "phone": "ee",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 210.4,
+          "energy": 59.285
+        },
+        {
+          "phone": "_",
+          "frames": 9,
+          "ms": 104.5,
+          "pitch_hz": 169.5,
+          "energy": 66.737
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 142.0,
+          "energy": 56.402
+        },
+        {
+          "phone": "v",
+          "frames": 2,
+          "ms": 23.2,
+          "pitch_hz": 153.7,
+          "energy": 39.424
+        },
+        {
+          "phone": "a",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 159.4,
+          "energy": 28.156
+        },
+        {
+          "phone": "k",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 195.1,
+          "energy": 6.565
+        },
+        {
+          "phone": "aa",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 205.3,
+          "energy": 91.354
+        },
+        {
+          "phone": "sh",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 193.0,
+          "energy": 24.103
+        },
+        {
+          "phone": "a",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 217.7,
+          "energy": 27.699
+        },
+        {
+          "phone": "m",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 195.1,
+          "energy": 46.741
+        },
+        {
+          "phone": "u",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 189.4,
+          "energy": 45.617
+        },
+        {
+          "phone": "n",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 187.1,
+          "energy": 39.372
+        },
+        {
+          "phone": "d",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 183.9,
+          "energy": 41.236
+        },
+        {
+          "phone": "a",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 180.7,
+          "energy": 56.97
+        },
+        {
+          "phone": "n",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 165.8,
+          "energy": 42.61
+        },
+        {
+          "phone": "n",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 170.5,
+          "energy": 43.517
+        },
+        {
+          "phone": "a",
+          "frames": 2,
+          "ms": 23.2,
+          "pitch_hz": 174.6,
+          "energy": 51.707
+        },
+        {
+          "phone": "_",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 152.2,
+          "energy": 26.83
+        },
+        {
+          "phone": "a",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 134.1,
+          "energy": 29.255
+        },
+        {
+          "phone": "bh",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 138.6,
+          "energy": 31.781
+        },
+        {
+          "phone": "i",
+          "frames": 11,
+          "ms": 127.7,
+          "pitch_hz": 186.0,
+          "energy": 34.92
+        },
+        {
+          "phone": "p",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 205.1,
+          "energy": 8.132
+        },
+        {
+          "phone": "r",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 207.3,
+          "energy": 66.322
+        },
+        {
+          "phone": "aa",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 199.9,
+          "energy": 101.581
+        },
+        {
+          "phone": "y",
+          "frames": 2,
+          "ms": 23.2,
+          "pitch_hz": 191.7,
+          "energy": 89.057
+        },
+        {
+          "phone": "aa",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 179.5,
+          "energy": 70.386
+        },
+        {
+          "phone": "n",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 166.9,
+          "energy": 54.247
+        },
+        {
+          "phone": "n",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 168.7,
+          "energy": 47.489
+        },
+        {
+          "phone": "i",
+          "frames": 9,
+          "ms": 104.5,
+          "pitch_hz": 153.2,
+          "energy": 50.089
+        },
+        {
+          "phone": ",",
+          "frames": 9,
+          "ms": 104.5,
+          "pitch_hz": 92.2,
+          "energy": 7.678
+        },
+        {
+          "phone": "_",
+          "frames": 19,
+          "ms": 220.6,
+          "pitch_hz": 120.8,
+          "energy": 0.969
+        },
+        {
+          "phone": "v",
+          "frames": 2,
+          "ms": 23.2,
+          "pitch_hz": 133.0,
+          "energy": 19.594
+        },
+        {
+          "phone": "y",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 141.7,
+          "energy": 52.657
+        },
+        {
+          "phone": "a",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 137.8,
+          "energy": 29.58
+        },
+        {
+          "phone": "k",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 143.3,
+          "energy": 1.363
+        },
+        {
+          "phone": "t",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 161.0,
+          "energy": 3.008
+        },
+        {
+          "phone": "a",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 161.3,
+          "energy": 37.106
+        },
+        {
+          "phone": "m",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 136.3,
+          "energy": 40.12
+        },
+        {
+          "phone": "_",
+          "frames": 4,
+          "ms": 46.4,
+          "pitch_hz": 123.0,
+          "energy": 19.223
+        },
+        {
+          "phone": "c",
+          "frames": 3,
+          "ms": 34.8,
+          "pitch_hz": 121.1,
+          "energy": 5.358
+        },
+        {
+          "phone": "ee",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 127.9,
+          "energy": 29.023
+        },
+        {
+          "phone": "sh",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 113.8,
+          "energy": 14.228
+        },
+        {
+          "phone": "aa",
+          "frames": 8,
+          "ms": 92.9,
+          "pitch_hz": 133.2,
+          "energy": 39.833
+        },
+        {
+          "phone": "r",
+          "frames": 6,
+          "ms": 69.7,
+          "pitch_hz": 110.1,
+          "energy": 18.734
+        },
+        {
+          "phone": "u",
+          "frames": 5,
+          "ms": 58.0,
+          "pitch_hz": 103.2,
+          "energy": 0.977
+        },
+        {
+          "phone": ".",
+          "frames": 1,
+          "ms": 11.6,
+          "pitch_hz": 105.8,
+          "energy": 1.113
+        }
+      ],
+      "pred_pitch_hz_mean": 186.8,
+      "pred_pitch_hz_range": [
+        92.2,
+        279.8
+      ],
+      "measured_f0_hz_mean": 187.0,
+      "speech_rate_phones_per_s": 14.44
+    }
+  }
+}

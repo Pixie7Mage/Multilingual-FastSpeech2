@@ -1,0 +1,11 @@
+{
+    "model": "FastSpeech2 Telugu",
+    "checkpoint": "50,000 steps",
+    "evaluation_samples": 11,
+    "reference_characters": 344,
+    "substitutions": 18,
+    "deletions": 3,
+    "insertions": 14,
+    "corpus_normalized_CER_percent": 10.84,
+    "recognizer": "Whisper Large V3"
+}
